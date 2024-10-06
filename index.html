@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Tandoori Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="recipe-card">
+        <h1>Chicken Tandoori</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0dtuGiPhd3bowXxrbe9OyigH-M76VDV0nA&s" alt="Chicken Tandoori" alt="Chicken Tandoori">
+
+        <div class="prep-info">
+            <p>Preparation Time: 60 minutes</p>
+            <p>Cook Time: 45 minutes</p>
+            <p>Servings: 4</p>
+        </div>
+
+        <button id="toggle-ingredients">Show Ingredients</button>
+        <ul class="ingredients hidden">
+            <li>500g chicken</li>
+            <li>1/2 cup yogurt</li>
+            <li>2 tbsp lemon juice</li>
+            <li>2 tbsp garlic paste</li>
+            <li>2 tbsp ginger paste</li>
+            <li>1 tbsp cumin powder</li>
+            <li>1 tbsp coriander powder</li>
+            <li>1 tsp turmeric</li>
+            <li>1 tsp chili powder</li>
+            <li>1 tsp garam masala</li>
+        </ul>
+
+        <button id="toggle-steps" class="hidden">Show Instructions</button>
+        <ol class="steps hidden">
+            <li>Marinate the chicken with all ingredients and refrigerate for at least 4 hours.</li>
+            <li>Preheat the oven to 200°C (400°F).</li>
+            <li>Place the marinated chicken on a baking tray.</li>
+            <li>Bake for 35-40 minutes, basting occasionally.</li>
+            <li>Broil for an additional 5-10 minutes for crispy skin.</li>
+            <li>Garnish with lemon slices and serve hot.</li>
+        </ol>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div id="final-message" class="hidden">
+            <h2>Your yummy food is ready! 🎉🍽️</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

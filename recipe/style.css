@@ -1,0 +1,161 @@
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.recipe-card {
+    background-color: white;
+    padding: 20px;
+    width: 90%; /* Relative width for responsiveness */
+    max-width: 400px; /* Max width for large screens */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-card h1 {
+    color: violet;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.prep-info {
+    margin: 10px 0;
+}
+
+button {
+    display: block;
+    background-color: violet;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 90%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: violet;
+}
+
+.hidden {
+    display: none;
+}
+
+.ingredients li, .steps li {
+    text-align: left;
+    margin: 10px 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.ingredients li:hover, .steps li:hover {
+    color: violet;
+    font-weight: bold;
+}
+
+.steps li.completed {
+    color: #fff;
+    background-color: violet;
+    text-decoration: line-through;
+}
+
+.progress-bar-container {
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 25px;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: violet;
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+/* Final message */
+#final-message {
+    margin-top: 20px;
+    background-color: violet;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+#final-message.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .recipe-card {
+        width: 95%; /* Adjust width on tablets */
+        max-width: none;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #final-message {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card {
+        width: 100%; /* Full width for small screens */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    #final-message {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
